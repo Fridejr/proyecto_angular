@@ -1,0 +1,14 @@
+@if(guapo){
+    <p>Hola, {{nombre}}</p>
+}@else {
+    <p>Hola, {{nombre2}}</p>
+    <button (click)="guapo = true">Hacerse guapo</button>
+}
+
+<h3>Lista de usuarios del array</h3>
+
+<ul>
+    @for (user of users; track user.id){
+        <li>{{user.name}}</li>
+    }
+</ul>

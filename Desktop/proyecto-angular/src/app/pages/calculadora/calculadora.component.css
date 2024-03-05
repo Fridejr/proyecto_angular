@@ -1,0 +1,83 @@
+
+.calculadora {
+    background-color: #516369;
+    width: 20%;
+    margin-left: 40%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+div {
+    background-color: #5f9ea0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.numero:active, .operador:active, #calcular:active, #borrar:active, #reiniciar:active {
+    transform: scale(0.98);
+    opacity: 80%;
+}
+#cantidad1 {
+    background-color: transparent;
+    color: white;
+    grid-column: 1 / span 4;
+    height: 12vh;
+    font-size: 2.5em;
+    text-align: end;
+    cursor: initial;
+}
+
+#cantidad2 {
+    display: none;
+    background-color: transparent;
+    color: white;
+    grid-column: 1 / span 4;
+    height: 12vh;
+    font-size: 2.5em;
+    text-align: end;
+    cursor: initial;
+}
+
+.numero {
+    font-size: 1.2em;
+}
+
+.operador {
+    font-size: 1.2em;
+}
+
+#calcular {
+    background-color: #E83F70;
+    color: white;
+    font-size: 1.2em;
+}
+
+#n0 {
+    grid-column: 1 / span 3;
+    border-bottom-left-radius: 20px;
+}
+
+#calcular {
+    border-bottom-right-radius: 20px;
+}
+
+#borrar img {
+    width: 70%;
+}
+
+#reiniciar img {
+    width: 70%;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
