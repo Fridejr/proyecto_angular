@@ -82,4 +82,10 @@
         overflow-y: auto
       }
     }
+
+    img {
+        width: 17px;        
+
+        margin-right: 7px;
+    }
   

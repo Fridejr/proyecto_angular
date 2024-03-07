@@ -2,8 +2,8 @@
     <div id="cantidad1">{{ cantidad1 }}</div>
     <div id="cantidad2">{{ cantidad2 }}</div>
     <div class="operador" (click)="setOperador('%')">%</div>
-    <div id="reiniciar" (click)="reiniciar()"><img src="images/papelera.png" alt=""></div>
-    <div id="borrar" (click)="borrar()"><img src="images/borrar.png" alt=""></div>
+    <div id="reiniciar" (click)="reiniciar()"><img src="assets/calculadora-papelera.png" alt=""></div>
+    <div id="borrar" (click)="borrar()"><img src="assets/calculadora-borrar.png" alt=""></div>
     <div class="operador" (click)="setOperador('/')">/</div>
     <div class="numero" (click)="agregarNumero(7)">7</div>
     <div class="numero" (click)="agregarNumero(8)">8</div>
@@ -17,6 +17,6 @@
     <div class="numero" (click)="agregarNumero(2)">2</div>
     <div class="numero" (click)="agregarNumero(3)">3</div>
     <div class="operador" (click)="setOperador('+')">+</div>
-    <div class="numero" (click)="agregarNumero(0)">0</div>
+    <div class="numero" id="n0" (click)="agregarNumero(0)">0</div>
     <div id="calcular" (click)="calcular()">=</div>
 </div>
