@@ -1,13 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [RouterLink],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  searchTerm: string = "";
+
+  constructor(private router: Router) {}
+
+  /* searchPage() {
+    if (this.searchTerm && this.searchTerm.trim() !== '') {
+      // Redirige a la página correspondiente utilizando el término de búsqueda
+      this.router.navigate(['/search'], { queryParams: { q: this.searchTerm } });
+    }
+  } */
 
 }
+
+

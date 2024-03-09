@@ -10,5 +10,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
+  asideVisible: boolean = true;
 
+  toggleAside(): void {
+    this.asideVisible = !this.asideVisible;
+  }
 }

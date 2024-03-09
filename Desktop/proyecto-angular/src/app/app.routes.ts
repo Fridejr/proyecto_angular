@@ -19,6 +19,7 @@ export const routes: Routes = [
 {path: 'ticTacToe', component:JuegoCeldasComponent},
 {path: 'pokemon', component:PokemonComponent},
 
+
 {path: '**',redirectTo: '',pathMatch:'full' },
 
 ];
