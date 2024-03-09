@@ -6,6 +6,7 @@ import { CalculadoraComponent } from './pages/calculadora/calculadora.component'
 import { Title } from '@angular/platform-browser';
 import { AdivinaElNumeroComponent } from './pages/adivinar-numero/adivinar-numero.component';
 import { JuegoCeldasComponent } from './pages/tic-tac-toe/tic-tac-toe.component';
+import { PokemonComponent } from './pages/pokemon/pokemon.component';
 
 export const routes: Routes = [
 
@@ -16,6 +17,7 @@ export const routes: Routes = [
 {path: 'calculadora', component:CalculadoraComponent},
 {path: 'adivinarNumero', component:AdivinaElNumeroComponent},
 {path: 'ticTacToe', component:JuegoCeldasComponent},
+{path: 'pokemon', component:PokemonComponent},
 
 {path: '**',redirectTo: '',pathMatch:'full' },
 
