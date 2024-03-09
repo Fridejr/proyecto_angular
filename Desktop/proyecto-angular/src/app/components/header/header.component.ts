@@ -1,24 +1,26 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, FormsModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  searchTerm: string = "";
+  // Variable para almacenar la búsqueda del usuario
+  search: string = '';
+  // Inyectamos el servicio Router en el constructor
+  constructor(private router: Router) { }
+  // Método para buscar y navegar a la página correspondiente
+  buscar() {
+    // Navegar a la ruta correspondiente basada en la búsqueda
+    this.router.navigate([`/${this.search.toLowerCase()}`]);
+  }
 
-  constructor(private router: Router) {}
-
-  /* searchPage() {
-    if (this.searchTerm && this.searchTerm.trim() !== '') {
-      // Redirige a la página correspondiente utilizando el término de búsqueda
-      this.router.navigate(['/search'], { queryParams: { q: this.searchTerm } });
-    }
-  } */
+  
 
 }
 

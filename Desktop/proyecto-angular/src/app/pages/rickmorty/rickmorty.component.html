@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="filter d-flex">
+      <label for="characterStatus">Select Character Status:</label>
+      <select style="margin-left: 10px;" id="characterStatus" [(ngModel)]="selectedStatus" (change)="filterCharactersByStatus()">
+        <option value="all">All</option>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+        <option value="unknown">Unknown</option>
+      </select>
+      <!-- Otros controles de filtrado si es necesario -->
+  
+      <label style="margin-left: 20px;" for="characterName">Search Character:</label>
+      <input style="margin-left: 10px;" type="text" id="characterName" [(ngModel)]="searchTerm" (input)="filterCharactersByName()">
+    </div>
+  
+    <div class="character-list">
+      <div *ngFor="let character of filteredCharacters" class="character-card">
+        <img [src]="character.image" alt="{{ character.name }}">
+        <h3>{{ character.name }}</h3>
+        <p>Status: {{ character.status }}</p>
+        <p>Species: {{ character.species }}</p>
+        <!-- Otros detalles del personaje -->
+      </div>
+    </div>
+  </div>
+  

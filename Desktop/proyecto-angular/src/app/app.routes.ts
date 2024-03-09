@@ -7,6 +7,7 @@ import { Title } from '@angular/platform-browser';
 import { AdivinaElNumeroComponent } from './pages/adivinar-numero/adivinar-numero.component';
 import { JuegoCeldasComponent } from './pages/tic-tac-toe/tic-tac-toe.component';
 import { PokemonComponent } from './pages/pokemon/pokemon.component';
+import { RickmortyComponent } from './pages/rickmorty/rickmorty.component';
 
 export const routes: Routes = [
 
@@ -15,9 +16,10 @@ export const routes: Routes = [
 {path: 'home', component:HomeComponent},
 {path: 'users', component:UsersComponent},
 {path: 'calculadora', component:CalculadoraComponent},
-{path: 'adivinarNumero', component:AdivinaElNumeroComponent},
-{path: 'ticTacToe', component:JuegoCeldasComponent},
+{path: 'adivinarnumero', component:AdivinaElNumeroComponent},
+{path: 'tictactoe', component:JuegoCeldasComponent},
 {path: 'pokemon', component:PokemonComponent},
+{path: 'rick&morty', component:RickmortyComponent},
 
 
 {path: '**',redirectTo: '',pathMatch:'full' },
