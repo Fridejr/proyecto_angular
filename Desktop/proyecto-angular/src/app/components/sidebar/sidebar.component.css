@@ -1,7 +1,10 @@
 :host{
     display: block;
     grid-area: sidebar;
-    padding-top: auto;
+    padding-top: 15px;
+    width: 12vw;
+    margin-top: 0;
+    background-color: #2b3035;
   }
   
   .nga-btn-toggle {
@@ -14,8 +17,7 @@
       border: 0;
     }
     
-    .nga-btn-toggle:hover,
-    .nga-btn-toggle:focus {
+    .nga-btn-toggle:hover {
       color: rgba(0, 0, 0, .85);
       background-color: #cfe2ff;
     }
@@ -23,7 +25,7 @@
     .nga-btn-toggle::before {
       width: 1.25em;
       line-height: 0;
-      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgb(207, 15, 241)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
       transition: transform .35s ease;
       transform-origin: .5em 50%;
     }
@@ -44,8 +46,7 @@
       text-decoration: none;
     }
     
-    .nga-btn-toggle-nav a:hover,
-    .nga-btn-toggle-nav a:focus {
+    .nga-btn-toggle-nav a:hover {
       color: #0d6efd;
       background-color: #cfe2ff;
       font-weight: bold;
@@ -88,4 +89,24 @@
 
         margin-right: 7px;
     }
+
+    .nga-btn-toggle {
+      
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.285);
+        }
+
+    }
+
+    .nga-btn-toggle-nav a {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.285);
+      }
+
+    }
+
+    
+
+
   

@@ -28,4 +28,8 @@
   .character-card p {
     margin: 5px 0;
   }
+
+  * {
+    margin-top: 15px;
+  }
   

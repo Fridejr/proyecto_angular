@@ -1,6 +1,5 @@
 :host {
     margin: 0;
-    gap: 1rem;
     display: grid;
     grid-template-areas:
       "header header"
@@ -28,8 +27,22 @@
         "footer";
     }
   }
-  
+
+app-header {
+  margin-bottom: 0;
+}
 
 app-sidebar {
-  border-right: 2px solid black;
+  margin-top: 0;
+  position: relative;
+}
+
+app-sidebar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -2px; /* Ajusta el valor según el ancho del borde */
+  width: 4px; /* Ancho del borde */
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(207, 15, 241), #f50d50, #ff31d9); /* Degradado deseado */
 }

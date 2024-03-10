@@ -10,19 +10,18 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           
         </ul>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+
 
         <div class="d-flex">
-          <input class="form-control me-2" type="search" list="search" [(ngModel)]="search" placeholder="Buscar"
-          aria-label="Search">
-          <button class="btn btn-outline-success" (click)="buscar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input class="form-control me-2"  type="search" list="search"  [(ngModel)]="search" placeholder="Buscar"
+          aria-label="Search" style="border-color: #ff31d9; box-shadow: 0 0 5px purple;">
+          <button class="btn btn-outline-success" style="border-color: #ff31d9;" (click)="buscar()"><i class="fa-solid fa-magnifying-glass" style="color: #ff31d9;"></i></button>
         </div>
         
       </div>
     </div>
+
+    <div class="banner"></div>
     
   </nav>
   
