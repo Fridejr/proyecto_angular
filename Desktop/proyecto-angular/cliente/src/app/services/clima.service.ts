@@ -56,7 +56,5 @@ export class ClimaService {
       icono: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     };
   }
-}
-
- */
+} */
 
