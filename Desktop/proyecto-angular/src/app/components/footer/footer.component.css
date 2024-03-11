@@ -1,10 +1,12 @@
 :host{
     display: block;
     grid-area: footer;
+    text-align: center;
+    
   }
   
   .nga-footer {
-    background-color: #212121;
+    background-color: #2b3035;
     color: white;
   }
   .nga-footer {
@@ -84,5 +86,107 @@
   
   .nga-btn-twitter {
     background-color: #55acee;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #2c3e50;
+  }
+  
+  nav {
+    width: 450px;
+    margin: 40px auto;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  ul li {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 50px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    transition: all .5s ease-in;
+  }
+  
+  ul li:before {
+    content:'';
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  
+  ul li:after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: -3;
+    transition: all .5s ease-in-out;
+    opacity: .5;
+  }
+  
+  ul li a {
+    color: white;
+    margin: auto;
+    text-shadow: 0 2px 0 rgb(2,2,2);
+    transform: rotate(-45deg);
+    transition: all .5s ease-in;
+  }
+  
+  ul li:hover {
+    transform: rotate(765deg);
+  }
+  
+  ul li:hover:after {
+    right: 0%;
+  }
+  
+  ul li:hover a {
+     transform: rotate(-765deg);
+  }
+  
+  ul li:nth-of-type(4):before,
+  ul li:nth-of-type(4):after {
+    background: rgb(54, 215, 183);
+  }
+  
+  ul li:nth-of-type(1):before,
+  ul li:nth-of-type(1):after {
+    background: rgb(191, 85, 236);
+  }
+  
+  ul li:nth-of-type(2):before,
+  ul li:nth-of-type(2):after {
+    background: #22A7F0;
+  }
+  
+  ul li:nth-of-type(3):before,
+  ul li:nth-of-type(3):after {
+    background: rgb(247, 202, 24);
+  }
+
+  .banner {
+    width: 100%;
+    height: 1.3vh;
+    background: linear-gradient(to right,#8c11f0,  #f50d50, #ff31d9 );
+    bottom: 0;
+  }
+
+  p {
+    margin-bottom: 25px;
   }
   

@@ -15,7 +15,7 @@
       grid-area: content;
   }
   /* Media query en CSS */
-  @media (width <= 768px) {
+  @media (max-width: 768px) {
     /* Estilos para cuando el ancho de la ventana es máximo 768px */
     :host {
       grid-template-columns: 1fr; /* Cambia a una sola columna */
@@ -41,8 +41,10 @@ app-sidebar::after {
   content: '';
   position: absolute;
   top: 0;
-  right: -2px; /* Ajusta el valor según el ancho del borde */
-  width: 4px; /* Ancho del borde */
+  right: -2px; 
+  width: 4px; 
   height: 100%;
-  background-image: linear-gradient(to bottom, rgb(207, 15, 241), #f50d50, #ff31d9); /* Degradado deseado */
+  background-image: linear-gradient(to bottom, rgb(207, 15, 241), #f50d50, #ff31d9, rgb(207, 15, 241)); 
 }
+
+
