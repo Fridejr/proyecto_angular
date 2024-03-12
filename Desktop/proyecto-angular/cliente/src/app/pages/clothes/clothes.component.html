@@ -1,0 +1,10 @@
+<div class="product-container">
+  @for (item of clothes; track item) {
+    <div class="product-card">
+      <div class="product-details">
+        <h3 class="product-name">{{ item.name }}</h3>
+        <p class="product-price">$ {{ item.price }}</p>
+      </div>
+    </div>
+  }
+</div>
